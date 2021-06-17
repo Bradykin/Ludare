@@ -2,9 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class LevelSelect : MonoBehaviour
 {
+    [SerializeField] private Text highScoreText;
+
+    public void OnEnable()
+    {
+        highScoreText.text = LevelController.Instance.GetHighestScore().ToString();
+    }
+
 
     public void LoadLevel1()
     {

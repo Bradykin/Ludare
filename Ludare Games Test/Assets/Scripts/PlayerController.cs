@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour, IReset
 {
     [SerializeField] private SpriteRenderer model;
+    [SerializeField] private AudioSource deathSound;
+    [SerializeField] private AudioSource enemyStompSound;
+    [SerializeField] private AudioSource coinSound;
     
     private InputController inputController;
     private Collider2D collider2D;
@@ -119,6 +122,8 @@ public class PlayerController : MonoBehaviour, IReset
         model.material.color = new Color(model.material.color.r, model.material.color.g, model.material.color.b, 0.5f);
         isDead = true;
         Vector3 respawnPoint = startingPosition;
+        deathSound.Play();
+        LevelController.Instance.OnRunLost();
         float ghostSpeed = 5.0f * Mathf.Max(1.0f, Vector3.Distance(transform.position, respawnPoint) / 15.0f);
 
         while (transform.position != respawnPoint)
@@ -203,6 +208,8 @@ public class PlayerController : MonoBehaviour, IReset
             if (collider2D.bounds.min.y >= col.transform.position.y)
             {
                 enemy.Die();
+                enemyStompSound.Play();
+                LevelController.Instance.GainScore(20);
             }
             else
             {
@@ -213,9 +220,12 @@ public class PlayerController : MonoBehaviour, IReset
         {
             coin.Collect();
             hasDoubleJumped = false;
+            coinSound.Play();
+            LevelController.Instance.GainScore(10);
         }
         else if (flag != null)
         {
+            LevelController.Instance.OnRunEnd();
             SceneManager.LoadScene(flag.LevelName);
         }
     }
