@@ -11,10 +11,12 @@ ScriptsOnlyBuild:
     - Parallax
     - Platform
     - PlayerController
+    - ScoreLevelUpdate
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
     - UnityEditor.U2D.IK.IKEditorManager
+    - UnityEditor.U2D.IK.IKGizmos
     Unity.2D.IK.Runtime.dll:
     - UnityEditor.U2D.IK.IKEditorManagerHelper
     Unity.2D.Tilemap.Editor.dll:
@@ -63,6 +65,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -70,15 +76,25 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 2194}
+    - Class: 114
       Script: {instanceID: 2400}
+    - Class: 114
+      Script: {instanceID: 2610}
     - Class: 114
       Script: {instanceID: 2696}
     - Class: 114
       Script: {instanceID: 2748}
     - Class: 114
+      Script: {instanceID: 2776}
+    - Class: 114
+      Script: {instanceID: 2990}
+    - Class: 114
       Script: {instanceID: 3130}
     - Class: 114
       Script: {instanceID: 3138}
+    - Class: 114
+      Script: {instanceID: 3236}
     - Class: 114
       Script: {instanceID: 3598}
     - Class: 114
@@ -87,7 +103,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4906}
     - Class: 114
       Script: {instanceID: 5188}
+    - Class: 114
+      Script: {instanceID: 30242}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -96,6 +116,12 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Level 2.unity:
     - Class: 1
@@ -120,6 +146,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -127,11 +157,17 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 2194}
+    - Class: 114
       Script: {instanceID: 2400}
+    - Class: 114
+      Script: {instanceID: 2610}
     - Class: 114
       Script: {instanceID: 2696}
     - Class: 114
       Script: {instanceID: 2748}
+    - Class: 114
+      Script: {instanceID: 2990}
     - Class: 114
       Script: {instanceID: 3130}
     - Class: 114
@@ -144,7 +180,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4906}
     - Class: 114
       Script: {instanceID: 5188}
+    - Class: 114
+      Script: {instanceID: 30242}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -153,6 +193,12 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Level 3.unity:
     - Class: 1
@@ -177,6 +223,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
     - Class: 95
@@ -184,11 +234,17 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 2194}
+    - Class: 114
       Script: {instanceID: 2400}
+    - Class: 114
+      Script: {instanceID: 2610}
     - Class: 114
       Script: {instanceID: 2696}
     - Class: 114
       Script: {instanceID: 2748}
+    - Class: 114
+      Script: {instanceID: 2990}
     - Class: 114
       Script: {instanceID: 3130}
     - Class: 114
@@ -201,7 +257,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 4906}
     - Class: 114
       Script: {instanceID: 5188}
+    - Class: 114
+      Script: {instanceID: 30242}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -210,6 +270,12 @@ ScriptsOnlyBuild:
     - Class: 212
       Script: {instanceID: 0}
     - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Level Select.unity:
     - Class: 1
@@ -226,6 +292,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
@@ -236,6 +306,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 2610}
     - Class: 114
       Script: {instanceID: 2628}
+    - Class: 114
+      Script: {instanceID: 2696}
     - Class: 114
       Script: {instanceID: 2776}
     - Class: 114
@@ -407,7 +479,7 @@ ScriptsOnlyBuild:
     className: CanvasScaler
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 261e5f1a68ab70d9af31984cf3ecd1d7
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: LevelSelect
@@ -425,7 +497,7 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
-      Hash: 66e49fe9edff5fcbe3a0aa3fb58c19ee
+      Hash: 76a12f25ac24db2eaef0e0aa22da76c5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -843,11 +915,17 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: e17871b109a1e54557708aaa5de81990
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScoreLevelUpdate
   platform: 19
   scenePathNames:
   - Assets/Scenes/Level Select.unity
   - Assets/Scenes/Level 1.unity
   - Assets/Scenes/Level 2.unity
   - Assets/Scenes/Level 3.unity
-  playerPath: C:/Users/shulm/Documents/GitHub/Ludare/Ludare Games Test/Ludare Games
-    Test.exe
+  playerPath: C:/Users/shulm/Documents/GitHub/Ludare/Ludare Games Test/Builds/Ludare
+    Games Test.exe
